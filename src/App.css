@@ -1,0 +1,11 @@
+.App {
+    text-align: center;
+}
+
+
+.App {
+    background-image: url('./app_component/weatherapp.jpg');
+    background-size: cover;
+    background-position: bottom;
+    transition: 0.4 ease-out;
+}
