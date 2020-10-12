@@ -26,15 +26,20 @@ function Login() {
     return (
     
 <div>
+  
 
     {loggedIn === true ? (<div><Weather /></div>) :(<div><form>
+      <h2>Sign In</h2>
            <label>Email</label>
            <input type="email" value={email} onChange={handleEmailInput} />
+           
 
            <label>Password</label>
            <input type="password" value={password} onChange={handlePasswordInput} />
 
            <button onClick={handleLogin}>Login</button>
+
+           <p class= "forgot-pass">Forgot Password ?</p>
          </form></div>)}
 
 </div>
