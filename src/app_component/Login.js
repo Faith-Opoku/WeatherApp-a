@@ -20,30 +20,63 @@ function Login() {
         if (email=== login.email && password=== login.password) {
         setlogin(true);
         event.preventDefault();
+
+      
         }
+
+        
+      
+        
+
+        
     }
 
     return (
     
-<div>
+
+      
+      
+      <form>
+      
+        
+        
+        
+        <div className= "card-body login-page">
+          
+        
+          
+        <h2>Sign In</h2>
+  <div class="card">
+    
+    <label for="exampleInputEmail1">Email address</label>
+    <input type ={"email"} class="form-control" id={"exampleInputEmail1"} aria-describedby="emailHelp" />
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
   
+  <div class="card">
+    <label for="exampleInputPassword1">Password</label>
+    <input type={"password"} class="form-control" id={"exampleInputPassword1"} />
+    <p class= "forgot-pass">Don't have an account? Sign up?</p>
 
-    {loggedIn === true ? (<div><Weather /></div>) :(<div><form>
-      <h2>Sign In</h2>
-           <label>Email</label>
-           <input type="email" value={email} onChange={handleEmailInput} />
-           
+    
+  </div>
+  
+  <button type={"login"} class="btn btn-primary">Login</button>
 
-           <label>Password</label>
-           <input type="password" value={password} onChange={handlePasswordInput} />
 
-           <button onClick={handleLogin}>Login</button>
+   </div>
+    </form>
 
-           <p class= "forgot-pass">Forgot Password ?</p>
-         </form></div>)}
 
-</div>
-    )
+
+
+
+
+
+
+      
+
+    );
 }
 
 export default Login;

@@ -11,7 +11,7 @@ const Weather = (props)=>{
             <h1>Weather App</h1>
             <h6>Accra,Ghana</h6>
             <h6>08-09-2020</h6>
-            <h6>{url.weather.description}</h6>
+            {/* <h6>{url.weather.description}</h6> */}
             <h5 className="py-4">
                 
                 <i className="wi wi-day-sunny display-1"></i>
