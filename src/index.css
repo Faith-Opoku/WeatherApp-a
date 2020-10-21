@@ -13,9 +13,30 @@ code {
 }
 
 .login-page {
-  background-color: lightseagreen;
+  background-color: lightcyan;
   width: 500px;
   margin: 0 auto;
   margin-top: 120px;
-  border: lemonchiffon;
+  border: rgb(207, 206, 190);
 }
+
+.App {
+  background-image: url('./app_component/weatherapp2.jpg');
+  background-size: cover;
+  background-position: fixed;
+  transition: 0.4 ease-out;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.main {
+  background-color: lightcyan;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 120px;
+  border: rgb(207, 206, 190);
+  
+}
+
+

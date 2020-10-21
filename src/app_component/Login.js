@@ -1,82 +1,59 @@
-import React,{ useState } from 'react';
-import login from "./Login.json";
-import Weather from "./Weather";
+import React, { useState } from 'react';
 
-function Login() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-    const [loggedIn, setlogin] = useState(false);
-  
-    function handleEmailInput(event) {
-      setEmail(event.target.value)
-      console.log(email)
+function Login ({ setUserSignIn}) {
+
+    const [username, setUsername] = useState ('');
+    const [password, setPassword] = useState ('');
+    
+    function handleUsername (event) {
+        setUsername (event.target.value)
     }
-  
-    function handlePasswordInput(event) {
-      setPassword(event.target.value)
+
+    function handlePassword (event) {
+        setPassword (event.target.value)
     }
-  
-    function handleLogin(event) {
-        if (email=== login.email && password=== login.password) {
-        setlogin(true);
+
+    function handleSignIn (event) {
         event.preventDefault();
 
-      
-        }
-
-        
-      
-        
-
-        
+    if (username === 'Faith Opoku' && password === '45678' ) {
+        setUserSignIn(true)
+    
     }
 
+}
+
+
     return (
-    
+        <div>
+           <div className="card-body login-page">
+                <h3>Login </h3>
+            <form>
+                <div className="form-group">
+                    <label for="exampleInputusername1">Username</label>
+                    <input type="text" className="form-control" id="exampleInputusername1" aria-describedby="usernameHelp" 
+                    value={username} onChange= {handleUsername} />
+                </div>
 
-      
-      
-      <form>
-      
-        
-        
-        
-        <div className= "card-body login-page">
+                <div className="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" className="form-control" id="exampleInputPassword1" 
+                    value={password} onChange={handlePassword} />
+            
+                </div>
+                <button onClick={handleSignIn} className="btn btn-secondary btn-block">Sign In</button>
+            
+                <p className="mt-3">
+                    Don't have an account? <a href="https://google.com">
+                    Sign up here</a>
+                </p>
+            </form>
+
+            </div>
           
-        
-          
-        <h2>Sign In</h2>
-  <div class="card">
-    
-    <label for="exampleInputEmail1">Email address</label>
-    <input type ={"email"} class="form-control" id={"exampleInputEmail1"} aria-describedby="emailHelp" />
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  
-  <div class="card">
-    <label for="exampleInputPassword1">Password</label>
-    <input type={"password"} class="form-control" id={"exampleInputPassword1"} />
-    <p class= "forgot-pass">Don't have an account? Sign up?</p>
-
-    
-  </div>
-  
-  <button type={"login"} class="btn btn-primary">Login</button>
-
-
-   </div>
-    </form>
-
-
-
-
-
-
-
-
-      
-
+        </div>
     );
 }
 
 export default Login;
+

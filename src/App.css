@@ -1,61 +1,6 @@
-.App {
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+
+
     
-    
-    
-}
-
-.body {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient();
-}
-
-.App {
-    background-image: url('./app_component/weatherapp2.jpg');
-    background-size: cover;
-    background-position: fixed;
-    transition: 0.4 ease-out;
-    width: 100%;
-    height: 100vh;
-    
-}
-
-
-    .container {
-      flex: 1;
-      justify-content: center;
-      align-items: center;
-  
-    }
-      
-
-
-.header {
-    font-size: 24px;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .input,button {
-    margin-top: 2px;
-    min-width: 3em;
-    height: 37px;
-    padding: 0px 10px;
-    font-size: 16px;
-    font-family: "Open Sans", sans-serif;
-    background-color: darkorange;
-    border: 0;
-    border-radius: 4px;
-    margin-bottom: 31px;
-    transition: all 250ms ease-in-out;
-    
-
-    }
 
   
 
